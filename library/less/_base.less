@@ -232,18 +232,40 @@ h5, .h5 {
 *********************/
 
 .header {
+	padding: 0;
 	.clearfix;
-
+	
 	#inner-header {
+		width: 100%;
+		max-width: none;
+		margin: 0;
 		.clearfix;
+		background: -webkit-linear-gradient( -360deg, rgb(34,235,220) 100%, rgb(2,142,232) 110%);
+		background: -moz-linear-gradient( -360deg, rgb(34,235,220) 100%, rgb(2,142,232) 110%);
+		background: linear-gradient( -360deg, rgb(34,235,220) 100%, rgb(2,142,232) 110%);
+		
+		h1 {
+			margin: 4em 0 0;
+			text-align: center;
+			letter-spacing: 4px;
+			clear: both;
+			text-shadow: 0 14px 16px rgba(0,0,0,0.32);
+			
+			a {
+				color: #fff;
+			}
+		}
+
 	}
 
 	#logo {
-		margin: 16px 0 10px;
+		margin: 16px 1.2% 10px;
 		float: left;
+		opacity: 0.4;
 	
 		img {
-			max-width: 240px;
+			width: 80px;
+			height: auto;
 		}
 	}
 	
@@ -284,7 +306,10 @@ h5, .h5 {
 		clear: both;
 		
 		div.top-nav {
-			border-top: 1px solid @real-blue;
+			// border-top: 1px solid @real-blue;
+			max-width: 1140px;
+			margin: 0 auto;
+			display: block;
 		
 			ul {
 				li {	
@@ -297,6 +322,12 @@ h5, .h5 {
 					&:last-child {}
 				}
 			}
+		}
+	}
+	
+	@media screen and (min-width: 900px) {
+		#inner-header {
+			min-height: 240px;
 		}
 	}
 }

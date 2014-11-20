@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Custom Page Example
+Template Name: Colors
 */
 ?>
 
@@ -35,7 +35,7 @@ Template Name: Custom Page Example
 
 								</footer>
 
-								<?php comments_template(); ?>
+								<?php //comments_template(); ?>
 
 							</article>
 
@@ -54,7 +54,34 @@ Template Name: Custom Page Example
 									</article>
 
 							<?php endif; ?>
-
+							<ul id="colors">
+								<li>
+									<h3>Feature Brand Color</h3>
+									<div></div>
+									<p></p>
+									<p></p>
+								</li>
+								<li>
+									<h3></h3>
+									<div></div>
+									<p></p>
+									<p></p>
+								</li>
+							</ul>
+							<ul id="gradients">
+								<li>
+									<h3>Feature Brand Color</h3>
+									<div></div>
+									<p></p>
+									<p></p>
+								</li>
+								<li>
+									<h3></h3>
+									<div></div>
+									<p></p>
+									<p></p>
+								</li>
+							</ul>
 						</div>
 
 						<?php get_sidebar(); ?>

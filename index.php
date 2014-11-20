@@ -5,12 +5,14 @@
 				<div id="inner-content" class="wrap clearfix">
 					
 						<div id="main" class="eightcol first clearfix" role="main">
-							<div id="intro">
+							<!--
+<div id="intro">
 								<h1>This is a Styleguide.</h1>
 								<p>The goal of the Styleguide is to improve brand quality by raising the bar for continuity across customer touch points, and to improve productivity. There are resources here that, if maintained, will create a high standard for customer experience and make it easier for us to produce work that meets that standard.</p>
-							</div><!-- END #intro -->
+							</div>
+--><!-- END #intro -->
 							
-							<h2 id="section-title">Most Recent Updates</h2>
+							<!-- <h2 id="section-title">Most Recent Updates</h2> -->
 							
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
